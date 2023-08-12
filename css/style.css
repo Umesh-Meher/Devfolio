@@ -608,7 +608,7 @@ body{
 
 .hero-banner{
   width: 240px;
-  border-radius: var(--radius-circle);
+/*   border-radius: var(--radius-circle); */
 }
 
 .hero-content { max-width: 500px; }
