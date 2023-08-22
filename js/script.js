@@ -55,6 +55,21 @@ $tabBtn.forEach(item => {
     });
 });
 
+const submitBtn = document.querySelector("[data-submit-Btn]");
+function clearForm()  {
+    const name = document.querySelector('[data-name]');
+    const email = document.querySelector('[data-email]');
+    const subject = document.querySelector('[data-subject]');
+    const message = document.querySelector('[data-message]');
+
+    name.value = ""
+    email.value = "";
+    subject.value = "";
+    message.value = "";
+}
+
+submitBtn.addEventListener("click", clearForm());
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbx27j249JPypZzIWzdp34gIsN2x3XA3_m4WaGNrHrKMEvHWVxslFu4msECJL6OC0CExIw/exec'
   const form = document.forms['submit-to-google-sheet']
 
