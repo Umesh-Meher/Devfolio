@@ -59,10 +59,14 @@ $tabBtn.forEach(item => {
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbx27j249JPypZzIWzdp34gIsN2x3XA3_m4WaGNrHrKMEvHWVxslFu4msECJL6OC0CExIw/exec'
   const form = document.forms['submit-to-google-sheet']
-
+ 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
+
+form.addEventListener('submit' , function() {
+    form.rest();
+}
