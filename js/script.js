@@ -69,4 +69,4 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbx27j249JPypZzIWzdp34
 
 form.addEventListener('submit' , function() {
     form.rest();
-}
+});
